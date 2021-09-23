@@ -1,0 +1,41 @@
+@charset "UTF-8";
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  color: darkolivegreen;
+}
+
+a {
+  color: darkolivegreen;
+  text-decoration: none;
+}
+.Title {
+  text-align: center;
+}
+.swiper-slide {
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.swiper-slide.slide1 {
+  background-image: url(chef5.jpg);
+}
+.swiper-slide.slide2 {
+  background-image: url(chief6.jpg);
+}
+.swiper-slide.slide3 {
+  background-image: url(chef3.jpg);
+}
+.swiper-slide.slide4 {
+  background-image: url(chef2.jpg);
+}
+.swiper-slide.slide5 {
+  background-image: url(chief7.jpg);
+}
