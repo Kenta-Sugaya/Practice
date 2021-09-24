@@ -17,12 +17,8 @@ a {
 .Title {
   text-align: center;
 }
-.swiper-container {
-  position: relative;
-}
 .swiper-slide {
   height: 500px;
-  width: 34%;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
