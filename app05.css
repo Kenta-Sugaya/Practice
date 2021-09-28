@@ -1,0 +1,27 @@
+.box1 {
+  display: none;
+  background-color: #ff0000;
+  height: 200px;
+  width: 200px;
+}
+.box2 {
+  /* display: none; を削除 */
+  position: absolute;
+  left: 300px;
+  background-color: #22f00f;
+  height: 200px;
+  width: 200px;
+}
+.box3 {
+  /* display: none; を削除 */
+  top: 300px;
+  background-color: #1529e4;
+  height: 200px;
+  width: 200px;
+}
+.box4 {
+  /* display: none; を削除 */
+  background-color: #e911a1;
+  height: 200px;
+  width: 200px;
+}
