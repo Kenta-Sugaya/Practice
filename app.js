@@ -1,5 +1,8 @@
 $(function(){
-  $('.box1').slideDown();
-  $('.box2').slideUp();
-  $('.box3').hide();
+  $('.box1').on('click', function(){
+    $('.box1').addClass('box1-ext');
+  });
+  $('.box1').mouseout(function(){
+    $('.box1').removeClass('box1-ext');
+  });
 });
