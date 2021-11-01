@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Scroll</title>
+    <link rel="stylesheet" href="style3.css" />
+    <script>
+      window.addEventListener('load', (event) => {
+
+      document.getElementById('button1').addEventListener('click', () => {
+
+      // content2の表示位置を取得
+      var content2 = document.getElementById('content2');
+      var content_position = content2.getBoundingClientRect();
+
+      // content2へ移動
+      window.scrollTo( 0, content_position.top);
+
+      });
+      });
+    </script>
+  </head>
+  <body>
+    <h1>指定した位置にスクロールする</h1>
+    <button id="button1">コンテンツ2へ移動</button>
+      <div id="content1">コンテンツ1</div>
+      <div id="content2">コンテンツ2</div>
+      <div id="content3">コンテンツ3</div>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+#content1,
+#content2,
+#content3 {
+  height: 400px;
+  margin: 300px;
+  background-color: #ccc;
+}
+
+#content2 {
+  background-color: #ddd;
+}
