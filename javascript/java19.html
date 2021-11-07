@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Monochrome</title>
+    <script src="monochrome.js" defer></script>
+  </head>
+  <body>
+    <article id="content1">
+      <h1>JavaScriptレシピ</h1>
+      <ul id="btn_change">
+        <li><a href="#" class="active">デフォルト</a></li>
+        <li><a href="#">50%</a></li>
+        <li><a href="#">100%</a></li>
+      </ul>
+      <div>
+        <figure><img id="pic1" src="cake.jpg" alt="元画像"><figcaption>元の状態</figcaption></figure>
+        <figure><img id="pic2" src="cake.jpg" alt="加工画像"><figcaption>調整後</figcaption></figure>
+      </div>
+    </article>
+    <style>  
+    article {
+      padding: 20px;
+      background-color: #bedef7;
+    }
+    h1 {
+      margin: 0 0 20px;
+      padding: 0;
+      font-size: 100%;
+    }
+    
+    /* 彩度の切り替えボタン
+    ------------------------------ */
+    ul {
+      overflow: hidden;
+      margin: 0;
+      padding: 0;
+    }
+    ul li {
+      float: left;
+      margin: 0 20px 0 0;
+      display: inline-block;
+      padding: 0;
+    }
+    ul li a {
+      display: inline-block;
+      margin-bottom: 20px;
+      padding: 10px 20px;
+      color: #fff;
+      font-size: 86%;
+      text-decoration: none;
+      border-radius: 5px;
+      background-color: #4a93cb;
+    }
+    ul li a:hover,
+    ul li a.active {
+      background-color: #71b2e4;
+    }
+    
+    /* 画像エリア
+    ------------------------------ */
+    div {
+      overflow: hidden;
+    }
+    figure {
+      float: left;
+      margin: 0 20px 0 0;
+      padding: 0;
+    }
+    figure img {
+      width: 400px;
+      height: auto;
+    }
+    
+    /* 彩度の調整
+    ------------------------------ */
+    #pic2 {
+      filter: grayscale(0);
+      transition-property: filter;
+      transition-duration: .5s;
+      transition-timing-function: ease;
+    }
+    #pic2.lightgray {
+      filter: grayscale(0.5);
+    }
+    #pic2.gray {
+      filter: grayscale(1);
+    }</style>
+  </body>
+</html>
